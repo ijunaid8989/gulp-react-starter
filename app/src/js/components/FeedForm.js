@@ -1,3 +1,5 @@
+/** @jsx React.DOM */
+
 var React = require("react");
 
 var FeedForm = React.createClass({
@@ -7,8 +9,8 @@ var FeedForm = React.createClass({
     return (
       <form className="container">
         <div className="form-group">
-          <input type="text" className="form-controll" placeholder="Title" />
-          <input type="text" className="form-controll" placeholder="Description" />
+          <input type="text" className="form-control" placeholder="Title" />
+          <input type="text" className="form-control" placeholder="Description" />
           <button type="Submit" className="btn btn-primary btn-block">Add</button>
         </div>
       </form>

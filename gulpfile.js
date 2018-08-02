@@ -8,7 +8,7 @@ var gulp = require("gulp"),
 gulp.task('browserify', function() {
   gulp.src("./app/src/js/main.js")
       .pipe(browserify({ transform: 'reactify' }))
-      .pipe(gulp.dest('./app/dist/js'))
+      .pipe(gulp.dest('./app/dist/js'));
 });
 
 gulp.task("open", function() {
@@ -21,7 +21,7 @@ gulp.task("open", function() {
 
 gulp.task("connect", function() {
   connect.server({
-    root: "app",
+    root: ["app"],
     port: port,
     livereload: true
   });

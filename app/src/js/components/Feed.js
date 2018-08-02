@@ -1,3 +1,5 @@
+/** @jsx React.DOM */
+
 var React = require("react");
 var ShowAddButton = require("./ShowAddButton");
 var FeedForm = require("./FeedForm");
@@ -13,7 +15,7 @@ var Feed = React.createClass({
     ];
     return {
       items: FEED_ITEMS
-    }
+    };
   },
 
   render: function() {
