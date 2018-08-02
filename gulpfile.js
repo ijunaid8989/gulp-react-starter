@@ -44,4 +44,4 @@ gulp.task("watch", function() {
 });
 
 gulp.task("default", ["browserify"]);
-gulp.task("server", ["browserify", "connect", "open", "watch"]);
+gulp.task("serve", ["browserify", "connect", "open", "watch"]);
